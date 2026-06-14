@@ -1,3 +1,5 @@
+nmtui
+
 # install yay
 
 sudo pacman -S --needed git base-devel
