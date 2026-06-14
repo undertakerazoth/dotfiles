@@ -1,0 +1,7 @@
+require("colors")
+require("binds")
+require("autostart")
+require("rules")
+require("animations")
+require("environment")
+require("keyboard")

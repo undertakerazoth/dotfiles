@@ -1,0 +1,70 @@
+* {
+    background-image: none;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+window {
+    background-color: rgba(13, 13, 13, 0.72);
+}
+
+button {
+    color: #d8ccb8;
+    background-color: #1a1a1a;
+    background-image: none;
+
+    border: 2px solid #8b0000;
+    border-radius: 0px;
+    border-image: none;
+
+    box-shadow: none;
+    text-shadow: none;
+    outline-style: none;
+
+    margin: 5px;
+    padding: 0px 5px 80px 0px;
+
+    font-size: 48px;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+button:hover,
+button:focus,
+button:active {
+    color: #ffffff;
+    background-color: #8b0000;
+    background-image: none;
+
+    border: 2px solid #ff3333;
+    border-image: none;
+
+    box-shadow: none;
+    text-shadow: none;
+    outline-style: none;
+}
+
+button:hover label,
+button:focus label,
+button:active label {
+    color: #ffffff;
+   
+}
+
+#lock {
+    color: #b08d57;
+}
+
+#logout {
+    color: #d8ccb8;
+}
+
+#suspend {
+    color: #b08d57;
+}
+
+#reboot {
+    color: #c1121f;
+}
+
+#shutdown {
+    color: #ff3333;
+}

@@ -1,0 +1,160 @@
+[
+  {
+    "layer": "top",
+    "position": "top",
+    "output": "eDP-1",
+
+    "modules-left": [
+        "clock",
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+      "tray"
+    ],
+
+    "modules-right": [
+      //"cpu",
+      //"memory",
+     // "temperature",
+      "pulseaudio",
+      "network",
+      "custom/mako",
+      "custom/power"
+    ],
+
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "1": "󰚩",
+        "2": "󰣇",
+        "3": "󰈙",
+        "4": "󰊠",
+        "5": "󰒓",
+        "urgent": "",
+        "active": "",
+        "default": ""
+      }
+    },
+
+    "clock": {
+      "format": "󰥔 {:%H:%M}",
+      "tooltip-format": "{:%A, %d %B %Y}"
+    },
+
+    "cpu": {
+      "format": "⚙ CPU {usage}%"
+    },
+
+    "memory": {
+      "format": "󰍛 RAM {}%"
+    },
+
+    "temperature": {
+      "format": "󰔏 {temperatureC}°C",
+      "critical-threshold": 80
+    },
+
+    "pulseaudio": {
+      "format": "󰕾 {volume}%",
+      "format-muted": "󰖁 muted",
+      "on-click": "pavucontrol"
+    },
+
+    "network": {
+      "format-wifi": "󰖩 {signalStrength}%",
+      "format-ethernet": "󰈀 wired",
+      "format-disconnected": "󰖪 offline"
+    },
+
+    "custom/mako": {
+    "exec": "~/.config/waybar/scripts/mako-status.sh",
+    "interval": 5
+    },
+
+    "custom/power": {
+  "format": "",
+  "tooltip": true,
+  "tooltip-format": "Machine Rite",
+  "on-click": "~/.config/wlogout/launch.sh"
+    }
+  },
+
+  {
+    "layer": "top",
+    "position": "top",
+    "output": "HDMI-A-1",
+
+    "modules-left": [
+        "clock",
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [
+      "tray"
+    ],
+
+    "modules-right": [
+      //"cpu",
+      //"memory",
+      //"temperature",
+      "pulseaudio",
+      "network",
+      "custom/mako",
+      "custom/power"
+    ],
+
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "1": "󰚩",
+        "2": "󰣇",
+        "3": "󰈙",
+        "4": "󰊠",
+        "5": "󰒓",
+        "urgent": "",
+        "active": "",
+        "default": ""
+      }
+    },
+
+    "clock": {
+      "format": "󰥔 {:%H:%M}"
+    },
+
+    "cpu": {
+      "format": "⚙ {usage}%"
+    },
+
+    "memory": {
+      "format": "󰍛 {}%"
+    },
+
+     "temperature": {
+      "format": "󰔏 {temperatureC}°C",
+      "critical-threshold": 80
+    },
+
+    "pulseaudio": {
+      "format": "󰕾 {volume}%"
+    },
+
+    "network": {
+      "format-wifi": "󰖩 {signalStrength}%",
+      "format-ethernet": "󰈀 wired",
+      "format-disconnected": "offline"
+    },
+
+    "custom/mako": {
+    "exec": "~/.config/waybar/scripts/mako-status.sh",
+    "interval": 5
+    },
+
+    "custom/power": {
+  "format": "",
+  "tooltip": true,
+  "tooltip-format": "Machine Rite",
+  "on-click": "~/.config/wlogout/launch.sh"
+    }
+  }
+]

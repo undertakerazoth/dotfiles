@@ -1,0 +1,17 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Tela";
+    terminal: "kitty";
+
+    display-drun: "󰚩 STC Archives";
+    display-run: "󰒓 Command Rite";
+    display-window: "󰖲 Active Cogitators";
+
+    drun-display-format: "{icon} {name}";
+    sidebar-mode: false;
+}
+
+
+
+@theme "~/.config/rofi/themes/omnissiah.rasi"

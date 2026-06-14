@@ -1,0 +1,30 @@
+[mgr]
+prepend_keymap = [
+
+  # Windows-style copy/cut/paste
+  { on = "<C-c>", run = "yank", desc = "Copy" },
+  { on = "<C-x>", run = "yank --cut", desc = "Cut" },
+  { on = "<C-v>", run = "paste", desc = "Paste" },
+
+  # Select all
+  { on = "<C-a>", run = "select_all", desc = "Select all" },
+
+  # Rename
+  { on = "<F2>", run = "rename", desc = "Rename" },
+
+  # Delete
+  { on = "<Delete>", run = "remove", desc = "Trash" },
+  { on = "<S-Delete>", run = "remove --permanently", desc = "Delete permanently" },
+
+  # New file/folder
+  { on = "<C-n>", run = "create", desc = "Create" },
+
+  # Refresh
+  { on = "<F5>", run = "refresh", desc = "Refresh" },
+
+  # Properties / inspect
+  { on = "<A-Enter>", run = "inspect", desc = "Properties" },
+
+  # Toggle hidden files
+  { on = "<C-h>", run = "hidden toggle", desc = "Hidden files" },
+]

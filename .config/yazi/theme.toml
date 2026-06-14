@@ -1,0 +1,137 @@
+[app]
+
+overall = { bg = "#0d0d0d" }
+
+[indicator]
+
+parent  = { fg = "#ff3333", bg = "#8b0000", bold = true }
+current = { fg = "#ff3333", bg = "#8b0000", bold = true }
+preview = { fg = "#ff3333", underline = true }
+
+padding = { open = " ", close = " " }
+
+[mgr]
+
+cwd = { fg = "#c1121f", bold = true }
+
+hovered = { fg = "#ffffff", bg = "#8b0000", bold = true }
+preview_hovered = { fg = "#ffffff", bg = "#3a0b0b", bold = true }
+
+find_keyword = { fg = "#ff3333", bold = true, italic = true }
+find_position = { fg = "#b08d57", bold = true }
+
+marker_copied = { fg = "#b08d57", bg = "#0d0d0d" }
+marker_cut = { fg = "#ff3333", bg = "#0d0d0d" }
+marker_marked = { fg = "#c1121f", bg = "#0d0d0d" }
+marker_selected = { fg = "#0d0d0d", bg = "#c1121f", bold = true }
+
+count_copied = { fg = "#0d0d0d", bg = "#b08d57" }
+count_cut = { fg = "#0d0d0d", bg = "#ff3333" }
+count_selected = { fg = "#0d0d0d", bg = "#c1121f", bold = true }
+
+border_symbol = "│"
+border_style = { fg = "#8b0000" }
+
+# Red/black bottom status bar
+[mode]
+
+normal_main = { fg = "#0d0d0d", bg = "#8b0000", bold = true }
+normal_alt  = { fg = "#d8ccb8", bg = "#1a1a1a" }
+
+select_main = { fg = "#0d0d0d", bg = "#b08d57", bold = true }
+select_alt  = { fg = "#d8ccb8", bg = "#1a1a1a" }
+
+unset_main  = { fg = "#0d0d0d", bg = "#3a0b0b", bold = true }
+unset_alt   = { fg = "#d8ccb8", bg = "#1a1a1a" }
+
+[tabs]
+
+active = { fg = "#0d0d0d", bg = "#c1121f", bold = true }
+inactive = { fg = "#d8ccb8", bg = "#1a1a1a" }
+
+[status]
+
+separator_open = ""
+separator_close = ""
+
+mode_normal = { fg = "#0d0d0d", bg = "#8b0000", bold = true }
+mode_select = { fg = "#0d0d0d", bg = "#b08d57", bold = true }
+mode_unset = { fg = "#d8ccb8", bg = "#1a1a1a" }
+
+overall = { fg = "#d8ccb8", bg = "#0d0d0d" }
+
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+perm_type  = { fg = "#c1121f" }
+perm_read  = { fg = "#b08d57" }
+perm_write = { fg = "#c1121f" }
+perm_exec  = { fg = "#ff3333" }
+perm_sep   = { fg = "#3a0b0b" }
+
+progress_label  = { fg = "#d8ccb8", bold = true }
+progress_normal = { fg = "#8b0000", bg = "#1a1a1a" }
+progress_error  = { fg = "#ff3333", bg = "#1a1a1a" }
+
+[filetype]
+
+rules = [
+  { url = "*/", fg = "#b08d57", bold = true },
+
+  { mime = "image/*", fg = "#c1121f" },
+  { mime = "{audio,video}/*", fg = "#b08d57" },
+  { mime = "text/*", fg = "#d8ccb8" },
+  { mime = "application/json", fg = "#ff3333" },
+
+  { url = "*", fg = "#d8ccb8" },
+]
+
+[input]
+
+border   = { fg = "#8b0000" }
+title    = { fg = "#c1121f", bold = true }
+value    = { fg = "#d8ccb8" }
+selected = { fg = "#0d0d0d", bg = "#c1121f" }
+
+[icon]
+
+prepend_dirs = [
+  { name = ".npm",   text = "", fg = "#8b0000" },
+  { name = "public", text = "", fg = "#c1121f" },
+
+  { name = "Desktop",   text = "", fg = "#c1121f" },
+  { name = "Documents", text = "", fg = "#c1121f" },
+  { name = "Downloads", text = "", fg = "#c1121f" },
+  { name = "Pictures",  text = "", fg = "#c1121f" },
+  { name = "Music",     text = "", fg = "#b08d57" },
+  { name = "Videos",    text = "", fg = "#b08d57" },
+  { name = ".config",   text = "", fg = "#8b0000" },
+  { name = ".git",      text = "", fg = "#8b0000" },
+]
+
+prepend_conds = [
+  { if = "hidden & dir", text = "", fg = "#8b0000" },
+  { if = "dir",          text = "", fg = "#c1121f" },
+
+   # Symlinks
+  { if = "link",   text = "", fg = "#b08d57" },
+  { if = "orphan", text = "", fg = "#ff3333" },
+
+  # Executable files
+  { if = "exec", text = "", fg = "#c1121f" },
+
+  # Normal files / fallback page icon
+  { if = "!dir", text = "󰈙", fg = "#b08d57" },
+]
+
+prepend_exts = [
+  { name = "lua",  text = "", fg = "#c1121f" },
+  { name = "toml", text = "", fg = "#c1121f" },
+  { name = "json", text = "", fg = "#b08d57" },
+  { name = "css",  text = "", fg = "#8b0000" },
+  { name = "html", text = "", fg = "#c1121f" },
+  { name = "js",   text = "", fg = "#b08d57" },
+  { name = "ts",   text = "", fg = "#b08d57" },
+  { name = "txt",  text = "󰈙", fg = "#d8ccb8" },
+  { name = "md",   text = "", fg = "#d8ccb8" },
+]

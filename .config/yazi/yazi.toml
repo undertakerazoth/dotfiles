@@ -1,0 +1,23 @@
+[mgr]
+show_hidden = true
+show_symlink = true
+sort_by = "natural"
+
+[opener]
+edit = [
+  { run = 'codium "$@"', orphan = true, for = "unix", desc = "VSCodium" }
+]
+
+[open]
+prepend_rules = [
+  { mime = "inode/x-empty", use = "edit" },
+
+  { url = "*.lua", use = "edit" },
+  { url = "*.toml", use = "edit" },
+  { url = "*.json", use = "edit" },
+  { url = "*.css", use = "edit" },
+  { url = "*.txt", use = "edit" },
+  { url = "*.conf", use = "edit" },
+
+  { mime = "text/*", use = "edit" }
+]
