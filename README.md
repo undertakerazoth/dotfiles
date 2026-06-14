@@ -71,6 +71,8 @@ systemctl --user enable --now pipewire pipewire-pulse wireplumber
 
 systemctl --user restart pipewire pipewire-pulse wireplumber
 
+sudo pacman -S rofi
+
 chmod +x ~/.config/rofi/scripts/app-categories.sh
 
 sudo pacman -Rns dolphin
