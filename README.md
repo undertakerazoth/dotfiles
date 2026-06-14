@@ -31,15 +31,18 @@ yay -S bibata-cursor-theme
 hyprctl setcursor Bibata-Modern-Classic 24
 
 gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
+
 gsettings set org.gnome.desktop.interface cursor-size 24
 
 sudo pacman -S qt5ct qt6ct kvantum kvantum-qt5
+
+yay -S tela-icon-theme
 
 qt6ct
 qt5ct
 kvantummanager
 
-yay -S tela-icon-theme
+
 
 sudo pacman -S waybar playerctl pavucontrol
 
