@@ -9,6 +9,10 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
+git clone https://github.com/USERNAME/dotfiles.git
+
+yay -S zen-browser-bin
+
 sudo pacman -S mako btop
 
 # ttf-jetbrains-mono-nerd
@@ -39,7 +43,7 @@ yay -S tela-icon-theme
 
 sudo pacman -S waybar playerctl pavucontrol
 
-yay -S zen-browser-bin
+
 
 chmod +x ~/.config/waybar/scripts/mako-status.sh
 
