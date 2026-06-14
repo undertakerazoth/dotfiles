@@ -91,10 +91,13 @@ sudo mkdir -p /etc/greetd
 sudo nano /etc/greetd/config.toml
 
 [terminal]
+
 vt = 1
 
 [default_session]
+
 user = "greeter"
+
 command = "tuigreet --time --remember --remember-session --asterisks --greeting 'FORGE NODE AUTHENTICATION' --theme 'border=red;text=white;prompt=red;time=red;action=red;button=yellow;container=black;input=red' --cmd start-hyprland"
 
 sudo systemctl disable sddm
