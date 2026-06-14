@@ -39,7 +39,9 @@ sudo pacman -S qt5ct qt6ct kvantum kvantum-qt5
 yay -S tela-icon-theme
 
 qt6ct
+
 qt5ct
+
 kvantummanager
 
 
