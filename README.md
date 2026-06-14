@@ -15,7 +15,7 @@ yay -S zen-browser-bin
 
 sudo pacman -S mako btop
 
-# ttf-jetbrains-mono-nerd
+# ttf-jetbrains-mono-nerd 47)
 sudo pacman -S yazi ffmpegthumbnailer p7zip jq poppler fd ripgrep fzf zoxide
 
 sudo pacman -S networkmanager blueman cliphist
