@@ -1,4 +1,6 @@
-nmtui
+copy iso configuration network
+
+
 
 # install yay
 
