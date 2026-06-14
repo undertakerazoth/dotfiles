@@ -11,6 +11,8 @@ makepkg -si
 
 git clone https://github.com/USERNAME/dotfiles.git
 
+hyprctl reload
+
 yay -S zen-browser-bin
 
 sudo pacman -S mako btop
@@ -132,7 +134,10 @@ git remote set-url origin git@github.com:YOUR_USERNAME/YOUR_REPO.git
 git pull --rebase origin main
 
 git add .
+
+
 git commit -m "Add dotfiles"
 
 git push -u origin main
 
+reboot
