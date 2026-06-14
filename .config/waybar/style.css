@@ -17,11 +17,28 @@ window#waybar {
 }
 
 #workspaces button {
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+
     color: #d8ccb8;
     background: #1a1a1a;
     padding: 0 10px;
     margin: 4px 2px;
     border: 1px solid #3a0b0b;
+}
+
+#workspaces button:hover {
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+
+    color: #ffffff;
+    background: #3a0b0b;
+    
+    border: 1px solid #c1121f;
 }
 
 #workspaces button.active {
