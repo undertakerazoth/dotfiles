@@ -146,3 +146,14 @@ git commit -m "Add dotfiles"
 git push -u origin main
 
 reboot
+
+
+# after creating snapshots
+
+sudo limine-snapper-sync
+
+
+sudo cp /boot/limine.conf /boot/limine/limine.conf
+
+
+limine-snapper-list
